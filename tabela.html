@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html translate="no">
+
+<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/menu2.css">
+        <link rel="stylesheet" href="css/dropdown.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/table.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" type="text/css"
+                href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+        <title>Tabela</title>
+        <!--Ikonka w menu-->
+        <link rel="shortcut icon" href="images/pizza.ico" sizes="128x128">
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+
+        <!--MENU-->
+        <div id="main">
+                <div class="container">
+                        <navbar class="fixed-top">
+                                <div class="nav-fostrap">
+                                        <a href="index.html" class="logo">PIZZA</a>
+                                        <ul>
+                                                <li><a href="galeria.html">Galeria</a></li>
+                                                <li><a href="tabela.html">Tabela</a></li>
+                                                <li><a href="inne.html">Ankieta</a></li>
+                                                <li>
+                                                        <a href="javascript:void(0)">Cudy<span
+                                                                        class="arrow-down"></span></a>
+
+                                                        <ul class="dropdown">
+                                                                <li><a href="pizza/capri.html">Cud 1</a></li>
+                                                                <li><a href="pizza/sery.html">Cud 2</a></li>
+                                                                <li><a href="pizza/szynka.html">Cud 3</a></li>
+                                                                <li><a href="pizza/pep.html">Cud 4</a></li>
+                                                                <li><a href="pizza/marg.html">Cud 5</a></li>
+                                                                <li><a href="pizza/inferno.html">Cud 6</a></li>
+                                                                <li><a href="pizza/kurczak.html">Cud 7</a></li>
+
+                                                        </ul>
+                                                </li>
+                                                <li>
+
+                                                        <a href="javascript:void(0)">Więcej<span class="arrow-down"></span></a>
+                                                        <ul class="dropdown">
+                                                            <li><a href="https://pizzahut.pl/en" target="_blank"> Link do pizzerni</a></li>
+                                                            <li><a href="https://www.kuchnia-italia.pl/informacje/5-ciekawostek-o-pizzy-wloskiej" target="_blank">Dowiedz
+                                                                    się więcej</a></li>
+                                                        </ul>
+                                                    </li>
+
+                                        </ul>
+                                </div>
+                                <div class="nav-bg-fostrap">
+                                        <div class="navbar-fostrap">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                        </div>
+                                </div>
+                        </navbar>
+                </div>
+        </div>
+
+        <script>
+                $(document).ready(function () {
+                        $('.navbar-fostrap').click(function () {
+                                $('.nav-fostrap').toggleClass('visible');
+                                $('body').toggleClass('cover-bg');
+                        })
+                })
+        </script>
+
+
+        <div class="navbar">
+
+                <div class="dropdown">
+                        <button class="dropbtn">Linki
+                                <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                                <a href="#tabela">Tabela</a>
+                                <a href="#1">Podpunkt 1</a>
+                                <a href="#5">Podpunkt 5</a>
+                                <a href="#10">Podpunkt 10</a>
+                                <a href="#15">Podpunkt 15</a>
+                                <a href="#20">Podpunkt 20</a>
+                        </div>
+                </div>
+        </div>
+
+        <h2>Ulubione pizze
+                polaków</h2>
+
+        <table id="tabela">
+                <tr>
+                        <th>Najbardziej lubiane pizze polaków</th>
+                        <th>Jakie dodatki</th>
+                        <th>Procent</th>
+                </tr>
+                <tr>
+                        <td>Pepperoni</td>
+                        <td>Salami, cebula</td>
+                        <td>25%</td>
+                </tr>
+                <tr>
+                        <td>Margharita</td>
+                        <td>0 dodatków</td>
+                        <td>19%</td>
+                </tr>
+                <tr>
+                        <td>Z kurczakiem</td>
+                        <td>Kurczak, kukurydza</td>
+                        <td>16%</td>
+                </tr>
+                <tr>
+                        <td>Z szynka</td>
+                        <td>Szynka parmeńska, cebula</td>
+                        <td>13%</td>
+                </tr>
+                <tr>
+                        <td>4 sery</td>
+                        <td>Mozarella, ricotta, parmesan, gorgonzola</td>
+                        <td>10%</td>
+                </tr>
+                <tr>
+                        <td>Inferno</td>
+                        <td>Papryczki jalapeno, ostre salami, kapary</td>
+                        <td>9%</td>
+                </tr>
+                <tr>
+                        <td>Capricciosa</td>
+                        <td>Szynka, grzyby, karczochy</td>
+                        <td>8%</td>
+                </tr>
+        </table>
+
+        <h2>Popularne pizze</h2>
+        <div class="list">
+                <ol>
+                        <li id="1" class="pizza">Pizza Neapolitańska <p>Pizza Neapolitańska znana również jako pizza po
+                                        Neapolu, to rodzaj
+                                        pizzy z pomidorami i mozzarellą. W środku jest cienka i wilgotna, natomiast jej
+                                        brzegi są puchate,
+                                        miękkie i wyrośnięte.</p>
+                        </li>
+                        <li class="pizza">Pizza Sycylijska <p>Pizza Sycylijska jest rodzajem grubego, puszystego placka,
+                                        z
+                                        chrupiącymi brzegami i dużą ilością sosu pomidorowego, który dawniej rolnicy
+                                        sycylijscy zabierali ze
+                                        sobą do pracy.</p>
+                        </li>
+                        <li class="pizza">Pizza Rzymska <p>Pizza Rzymska, ma grubsze ciasto, od 1 do 2cm, aby dobrze
+                                        podtrzymywało
+                                        składniki oraz mocno zarumienione i podniesione brzegi. Do ciasta dodaje się
+                                        mąkę o sile od W180 do
+                                        W290, odrobinę tłuszczu, ale mniej wody.</p>
+                        </li>
+                        <li class="pizza">Pizza Genovese – Focaccia <p>Pizza Genovese – Focaccia to klasyk kuchni
+                                        liguryjskiej. Jest
+                                        to rodzaj słonego pieczywa drożdżowego o grubości maksymalnie 2 cm, lśniącego
+                                        oliwą, bogatego w
+                                        ziarna soli i z charakterystycznymi głębokimi wgłębieniami na powierzchni.</p>
+                        </li>
+                        <li id="5" class="pizza">Pizza Marchigiana <p>Pizza Marchigiana nie przypomina zupełnie pizzy.
+                                        Większość osób
+                                        całkiem słusznie, nazwałoby ją zapewne zwyczajną babką. Jest to bowiem pieczone
+                                        w wysokiej formie
+                                        wytrawne ciasto drożdżowe.</p>
+                        </li>
+                        <li class="pizza">Pizza Chicagowska <p>Pizza Chicagowska to odmiana pizzy popularna głównie w
+                                        regionie
+                                        Chicago. Wyglądem odbiega od tradycyjnej pizzy, bardziej przypominając okrągłe
+                                        ciasto. Pizza w tej
+                                        odmianie jest pieczona w piekarniku na głębokiej patelni.</p>
+                        </li>
+                        <li class="pizza">Pizza Kalifornijska <p>Pizza Kalifornijska to odmiana pizzy popularna na
+                                        zachodnim
+                                        wybrzeżu Stanów Zjednoczonych, zwłaszcza na terenie Kalifornii, związana z modą
+                                        na zdrowy tryb
+                                        życia. Jest rozpoznawalna przez niestandardowe dodatki. </p>
+                        </li>
+                        <li class="pizza">Pizza Nowojorska <p>Pizza Nowojorska – charakteryzuje ją ręcznie wyrabiane,
+                                        cienkie
+                                        ciasto,ktore zwykle zawiera także oliwę i cukier. Brzegi są chrupiące, natomiast
+                                        pod składnikami
+                                        jest ona miękka i elastyczna, co umożliwia złożenie jej na pół. </p>
+                        </li>
+                        <li class="pizza">Pizza Polska <p>Pizza Polska – charakteryzuje się grubym i puszystym ciastem
+                                        oraz dużą
+                                        ilością składników. Czasem ich liczba może przyprawić o zawrót głowy. W dodatku
+                                        często są to
+                                        składniki mięsne. </p>
+                        </li>
+                        <li id="10" class="pizza">Pizza Ziti <p>Pizza Ziti to popularna we Włoszech pizza z makaronem i
+                                        dwoma
+                                        lub trzema
+                                        rodzajami sera. Sery niezbędne do jej przygotowania to: parmezan, mizzarells i
+                                        ricotta. </p>
+                        </li>
+                        <li class="pizza">Pizza na zakwasie <p>Pizza na zakwasie – używanie zakwasu zamiast drożdży do
+                                        przygotowania
+                                        ciasta na pizzę jest dość nowym pomysłem. Taka pizza jest zdrowsza, ponieważ
+                                        mniej rozpycha żołądek.
+                                        Cechuje ją duża chrupkość i lekkość. </p>
+                        </li>
+                        <li class="pizza">Pizza Andrei – Pissalandrea <p>Pizza Andrei- Pissalandrea to danie
+                                        reprezentuje spotkanie
+                                        pizzy i chleba focaccia, a różni się od wersji neapolitańskiej tym, że piecze
+                                        się je na patelni i ma
+                                        gęste ciasto. </p>
+                        </li>
+                        <li class="pizza">Pizza Wegańska <p>Pizza Wegańska – najważniejsze w niej jest ciasto. Samo
+                                        ciasto na pizzę
+                                        z reguły jest wegańskie, nie wykorzystuje bowiem składników pochodzenia
+                                        zwierzęcego. </p>
+                        </li>
+                        <li class="pizza">French Bread <p>French bread – popularna we Francji odmiana pizzy
+                                        przygotowywana na
+                                        chlebie. Przyrządza się ją w sposób następujący- bochenek kroi się wzdłuż,
+                                        smaruję sosem
+                                        pomidorowym, a następnie układa ser i pozostałe dodatki. </p>
+                        </li>
+                        <li id="15" class="pizza">Bagel Pizza <p>Bagel pizza to połączenie bajgli oraz typowych dla
+                                        pizzy
+                                        dodatków. Przysmak
+                                        ten spotkać można głównie na Manhattanie i Brooklynie. Przekrojone wzdłuż bajgle
+                                        smaruje się serkiem
+                                        śmietankowym oraz sosem pomidorowym i przykrywa tartym serem.</p>
+                        </li>
+                        <li class="pizza">Calzone <p>Calzone to potrawa kuchni włoskiej. Rodzaj pizzy, zawijanej na
+                                        kształt pieroga,
+                                        w którym znajduje się nadzienie. Ciasto na calzone jest takie samo jak na
+                                        tradycyjną, otwartą pizzę.
+                                </p>
+                        </li>
+                        <li class="pizza">Flammkuchen <p>Flammkuchen to tradycyjne alzackie danie w formie tarty na
+                                        bazie ciasta
+                                        chlebowego, cebuli, boczku ciętego w drobne słupki i śmietany. Danie to pochodzi
+                                        z pogranicza
+                                        francusko-niemieckiego. </p>
+                        </li>
+                        <li class="pizza">Pizzerina <p>Pizzerina- to placek drożdżowy przygotowywany tak samo jak spód
+                                        od pizzy,
+                                        zawijany i podawany na ciepło z grzybami, mięsem lub innymi dodatkami. Jest
+                                        prosta i szybka w
+                                        przygotowaniu oraz dobrze smakuje nawet na zimno.</p>
+                        </li>
+                        <li class="pizza">Pizza z patelni <p>Pizza z Patelni – robi się ją tak samo jak pizzę
+                                        tradycyjną, czyli na
+                                        drożdżach. Jedyna różnica polega na tym, że nie piecze się jej w piekarniku a
+                                        smaży na patelni. Jest
+                                        prosta do zrobienia i super pyszna. </p>
+                        </li>
+                        <li id="20" class="pizza">Pizza domowa <p>Pizza domowa – to najlepsza możliwa przekąska na obiad
+                                        czy
+                                        kolację. Jest
+                                        okrągła, na grubym cieście z dodatkiem sera, szynki i pieczarek. Ciasto jest
+                                        miękkie i puszyste oraz
+                                        smakuje każdemu. </p>
+                        </li>
+                        <li class="pizza">Pizza domowa <p>Pizza smażona, włoska pizza fritta, jest to siostra pizzy
+                                        neapolitańskiej,
+                                        a dokładniej jej uboższa wersja. Jej początki sięgają końca II wojny światowej,
+                                        kiedy to w Neapolu
+                                        brakowało nawet najbardziej podstawowych surowców, takich jak pomidorów i
+                                        mozzarelli.</p>
+                        </li>
+                </ol>
+        </div>
+
+        <br><br>
+        <div class="footer">Autor: Wojtek Burek 1tc</div>
+</body>
+
+</html>

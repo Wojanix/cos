@@ -1,0 +1,329 @@
+* { 
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    font-size: 20px;
+    color: #666;
+    font-family: sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+.nav-fostrap {
+    border-bottom: 3px solid rgb(0, 0, 0);
+    width: auto;
+    display: block;
+    background: rgb(0, 0, 0);
+    -webkit-box-shadow: 0 2px 7px 0 rgba(0,0,0,0.26);
+    -moz-box-shadow: 0 2px 7px 0 rgba(0,0,0,0.26);
+    -o-box-shadow: 0 2px 7px 0 rgba(0,0,0,0.26);
+    z-index: 120;
+    box-shadow: 0 2px 7px 0 rgba(0,0,0,0.26);
+}
+
+.nav-fostrap ul{
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+
+}
+
+.nav-fostrap li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    position: relative;
+    font-size: 20px;
+    color: orangered;
+}
+
+.nav-fostrap li a{
+    padding: 21px 28px;
+    font-size: 20;
+    color: orangered;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    display: inline-block;
+    outline: 0;
+    text-decoration: none;
+}
+
+.nav-fostrap li:hover ul.dropdown{
+    display: block;
+}
+
+.nav-fostrap li ul.dropdown{
+    position: absolute;
+    display: none;
+    width: 200px;
+    background: rgb(143, 143, 143);
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26);
+    -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26);
+    -o-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26);
+    z-index: 110;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26);
+    padding-top: 0;
+}
+
+.nav-fostrap li ul.dropdown li{
+    display: block;
+    list-style-type: none;
+
+}
+
+.nav-fostrap li ul.dropdown li a{
+    padding: 15px 20px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    display: block;
+    font-weight: 400;
+}
+
+.nav-fostrap li ul.dropdown li:last-child a{
+    border-bottom: none;
+}
+
+.nav-fostrap li:hover a{
+    background: rgb(206, 206, 206);
+    color: rgb(92, 92, 92) !important;
+}
+
+.nav-fostrap li:first-child:hover a{
+    border-radius: 3px 0 0 3px;
+
+}
+
+.nav-fostrap li ul.dropdown li:hover a {
+    background: rgba(0,0,0,0.1);
+}
+
+.nav-fostrap li ul.dropdown li:first-child:hover a {
+    border-radius: 0;
+}
+
+.nav-fostrap li:hover.arrow-down{
+    border-top: 5px solid #fff;
+}
+
+.arrow-down{
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid whitesmoke;
+    position: relative;
+    top: 15px;
+    right: -5px;
+    content: "";
+}
+
+.title-on-mobile {
+    display: none;
+}
+
+/* responywnosc */
+@media only screen and (max-width:834px){
+    .container{
+    margin-bottom: 19%;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .nav-fostrap{
+        background: #fff;
+        width: 200px;
+        height: 100%;
+        display: block;
+        position: fixed;
+        left: -200px;
+        top: 0px;
+        -webkit-transition: left 0.25s ease;
+        -moz-transition: left 0.25s ease;
+        -ms-transition:left 0.25s ease;
+        -o-transition: left 0.25s ease;
+        transition: left 0.25s ease;
+        margin: 0;
+        border: 0;
+        overflow-y: auto;
+        z-index: 105;
+    }
+    .title-on-mobile {
+        position: fixed;
+        display: block;
+        top: 10px;
+        font-size: 24px;
+        left: 100px;
+        right: 100px;
+        text-align: center;
+        color: rgb(76, 75, 75) !important;
+        text-decoration: none;
+
+    }
+
+    .nav-fostrap.visible{
+        left: 0px;
+        -webkit-transition: left 0.25s ease;
+        -moz-transition: left 0.25s ease;
+        -ms-transition:left 0.25s ease;
+        -o-transition: left 0.25s ease;
+        transition: left 0.25s ease;
+        z-index: 90;
+    }
+
+    .nav-bg-fostrap{
+        display: inline-block;
+        vertical-align: middle;
+        width: 100%;
+        height: 10px;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        left: 0px;
+        background: #ffffff;
+        -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26);
+        -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26);
+        -o-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26);
+        z-index: 100;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26);
+    }
+
+    .navbar-fostrap{
+        display: inline-block;
+        vertical-align: middle;
+        height: 50px;
+        cursor: pointer;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 12px;
+        z-index: 102;
+    }
+
+    .navbar-fostrap span{
+        height: 2px;
+        background: rgb(94, 94, 94);
+        margin: 5px;
+        display: block;
+        width: 20px;
+    }
+    
+    .navbar-fostrap span:nth-child(2){
+        width: 20px;
+    }
+
+    .navbar-fostrap span:nth-child(3){
+        width: 20px;
+
+    }
+
+    .nav-fostrap ul{
+        padding-top: 50px;
+    }
+
+    .nav-fostrap li{
+        display: block;
+    }
+
+    .nav-fostrap li a{
+        display: block;
+        color: #505050;
+        font-weight: 600;
+    }
+
+    .nav-fostrap li:first-child:hover a{
+        border-radius: 0;
+    }
+
+    .nav-fostrap li ul.dropdown{
+        position: relative;
+    }
+
+    .nav-fostrap li ul.dropdown li a{
+        background: #dedede;
+        border-bottom: none;
+        color: rgb(255, 255, 255) !important;
+    }
+
+    .nav-fostrap li:hover a{
+        background: #c6c6c6;
+        color: rgb(104, 104, 104) !important;
+    }
+
+
+    .nav-fostrap ul li ul.dropdown li a{
+        padding: 10px 10px 10px 30px;
+    }
+
+    .nav-fostrap li:hover .arrow-down{
+        border-top: 5px solid rgb(255,255,255);
+    }
+
+    .arrow-down{
+        border-top: 5px solid #505050;
+        position: absolute;
+        top: 20px;
+        right: 10px;
+    }
+
+    .cover-bg{
+        background: rgba(0,0,0,0.5);
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    .logo{
+        display: none;
+    }
+    .galtext{
+        font-size: 30px;
+        color: orangered;
+        padding: 6px;
+    }
+}
+
+@media only screen and (max-width:1199px){
+    .container{
+        width: 96%;
+    }
+}
+
+.fixed-top{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    height: 60px;
+}
+
+.logo{
+    position: relative;
+    float: left;
+    margin-left: 7px;
+    text-shadow: 3px 3px 0px rgba(181, 120, 17, 1);
+    text-decoration: none;
+    color: orangered;
+    font-size: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
