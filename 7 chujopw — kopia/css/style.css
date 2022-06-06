@@ -1,0 +1,224 @@
+.box {
+    width: 20%;
+    display: inline-block;
+    height: auto;
+    background-color: rgb(206, 206, 206);
+    box-shadow: 3px rgba(0, 0, 0, 0.6) 4px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 3%;
+    text-align: center;
+    padding: 15px;
+    border-radius: 20%;
+    color: whitesmoke;
+    transition: 0.5s;
+    -webkit-box-shadow: 0px 0px 42px -10px rgba(0, 0, 86, 0.2);
+    -moz-box-shadow: 0px 0px 42px -10px rgba(0, 0, 86, 0.2);
+    box-shadow: 0px 0px 42px -10px rgba(0, 0, 86, 0.2);
+    justify-content: center;
+    align-items: center;
+
+}
+
+.box:hover {
+    -webkit-box-shadow: 0px 0px 30px 5px rgba(122, 80, 2, 0.4);
+    -moz-box-shadow: 0px 0px 30px 5px rgba(122, 80, 2, 0.4);
+    box-shadow: 0px 0px 30px 5px rgba(122, 80, 2, 0.4);
+    transform: scale(1.05);
+}
+
+.box img {
+    height: auto;
+    width: 90%;
+    min-width: 90%;
+}
+
+.box h2 {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5vw;
+}
+
+.box p {
+    font-size: 1vw;
+    font-weight: 700;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(39, 48, 47);
+    text-decoration: none;
+}
+
+.box p a {
+    text-decoration: none;
+    color: rgb(227, 151, 107);
+}
+
+
+
+
+
+.title{
+    text-align: center;
+    font-size: 50px;
+    background-color: rgb(20,20,20);
+    color: orangered;
+    display: block;
+}
+
+.title:hover{
+    text-shadow: 4px 4px 21px rgba(214, 111, 10, 1);
+}
+
+.text{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 100%;
+    padding-left: 18%;
+    padding-right: 18%;
+    background-color: orangered;
+    text-align: center;
+    color: rgb(20,20,20);
+    font-family: 'Comic Sans MS';
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.text:hover{
+    color: rgb(59, 47, 41);
+    font-weight: 600;
+}
+
+.image{
+    display: block;
+    width: 50%;
+    height: auto;
+    margin-left: 25%;
+    
+    padding: 3%;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.image:hover{
+    display: block;
+    transform: scale(1.05);
+}
+
+.imgbig{
+    width: 100%;
+    background-color: rgb(10, 10, 10);
+}
+
+.return{
+    background-color: rgb(206, 65, 14);
+    text-align: center;
+    padding: 20px;
+}
+.return a{
+    text-decoration: none;
+    color: rgb(19, 19, 19);
+    font-size: 20px;
+}
+
+
+
+
+@media only screen and (max-width:1400px){
+    body{
+        overflow: scroll;
+    }
+    .box {
+        width: 40%;
+        margin-left: 6%;
+    }
+    .box p{
+        font-size: 15px;
+    }
+    .box h2 {
+        color: rgb(22, 22, 22);
+        text-decoration: none;
+        font-size: 40px;
+        margin: 2px;
+    }
+    .box img{
+        min-width: 70%;
+        width: 70%;
+        height: auto;
+        border-radius: 5px;
+    }
+
+}
+
+@media only screen and (max-width:1200px){
+    
+    .title{
+        font-size: 35px;
+    }
+
+    .text{
+        width: 100%;
+        padding-left: 10%;
+        padding-right: 10%;
+        font-size: 20px;
+    }
+
+    .image{
+        display: block;
+        width: 64%;
+        height: auto;
+        margin-left: 18%;
+        
+        padding: 3%;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width:814px){
+    .box p{
+        font-size: 17px;
+    }
+
+}
+@media only screen and (max-width:700px){
+    body{
+        overflow: scroll;
+    }
+    .box{
+        display: block;
+        width: 70%;
+        margin-left: 15%;
+    }
+    .box p{
+        font-size: 15px;
+    }
+    .box h2 {
+        color: rgb(22, 22, 22);
+        text-decoration: none;
+        font-size: 30px;
+        margin: 2px;
+    }
+    .box img{
+        min-width: 60%;
+        width: 60%;
+        height: auto;
+        border-radius: 5px;
+    }
+    .galtext{
+        font-size: 35px;
+        color: orangered;
+        padding: 6px;
+    }
+
+    .prev,
+.next {
+    
+    top: 45%;
+    width: auto;
+    padding: 16px;
+    margin-top: -40px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    
+}
+}
